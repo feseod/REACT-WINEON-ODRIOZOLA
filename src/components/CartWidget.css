@@ -1,0 +1,33 @@
+.product-cart{
+    width: 20%;
+    margin: 0px;
+    background-color: var(--second-color);
+    border: 0;
+    cursor: pointer;
+}
+
+/*---------------------------- QUERIES----------------------------*/
+
+
+@media (min-width: 768px) {
+   
+    
+    .product-cart{
+        text-align: right;
+        width: 20%;
+        margin: 0px;
+    }
+
+}
+
+@media (min-width: 1024px){
+    
+   .product-cart {
+      text-align: right;
+      width: 20%;
+      margin: 0px;
+      position: relative;
+      right: -256px;
+      bottom: 8px;
+  }
+}

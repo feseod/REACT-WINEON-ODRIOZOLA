@@ -1,7 +1,8 @@
 import React from "react";
 import './NavBar.css'
+import CartWidget from './CartWidget';
 
-function NavBar(){
+function NavBar(props){
     return(
         <header>
             <section className="container">
@@ -9,11 +10,9 @@ function NavBar(){
                     <div>
                         <a href="#" className="logo">WineOn</a>
                     </div>
-                    <button className="product-cart">
-                        <a href="#">
-                            <i className="fas fa-shopping-cart"></i>
-                        </a> 
-                    </button>
+                    <CartWidget>
+                        <p> 1 </p>
+                    </CartWidget>
                     <button className="burger">
                         <i className="fas fa-bars"></i> 
                     </button>
