@@ -1,9 +1,14 @@
 import React from 'react';
+import ItemCount from './ItemCount'
 
-function ItemListContainer(props) {
+
+function ItemListContainer() {
+  const onAdd = (cantidad) =>{
+    console.log(`agregaste ${cantidad} de items`)
+  }
   return (
     <div>
-        {props.children}             
+        <ItemCount initial={1} stock={15} onAdd={onAdd} />             
     </div>
   );
 }

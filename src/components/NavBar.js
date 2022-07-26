@@ -11,7 +11,7 @@ function NavBar(props){
                         <a href="#" className="logo">WineOn</a>
                     </div>
                     <CartWidget>
-                        <p> 1 </p>
+                        1
                     </CartWidget>
                     <button className="burger">
                         <i className="fas fa-bars"></i> 
