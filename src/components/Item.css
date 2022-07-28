@@ -1,0 +1,111 @@
+#descuento {
+    color:rgb(17, 172, 43);
+    
+}
+.administration{
+    display: flex;
+    justify-content: center;
+}
+
+.administration1{
+    margin-right: 0.5rem;
+}
+
+.administration2{
+    margin-left: 0.5rem;
+}
+
+.botonArriba{
+    margin-bottom: 0.5rem;
+}
+
+.adminForm{
+    text-align: center;
+}
+
+.banner{
+    text-align: center;
+    /* width: 100vw; */
+    background-color: var(--second-color);
+}
+
+.banner img{
+    margin-top: 0.25rem;
+}
+
+.button-position{
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+    right: 20%;
+}
+
+.info >*{
+    color: var(--white-color);
+}
+
+
+ .article-index{
+    background-color: var(--gray-light-color);
+    box-shadow: var(--shadow);
+    text-align: center;
+    margin: auto auto 10px auto;
+    width: 240px;
+    height: 340px;
+    position:relative;   
+
+}
+
+.article-index img{
+    width: 70%;
+}
+
+.fab {
+    padding: 10px;
+    font-size: 30px;
+    /* width: 30px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+       }
+
+    .fab:hover {
+    opacity: 0.7;
+    }
+
+    .fa-whatsapp {
+    background: #13fc59;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    } 
+
+main h2{
+    text-align: center;
+}
+
+
+.main-button{
+    height: 40px;
+    border-radius: 5px;
+    border:solid  0.5px var(--white-color);
+    background-color: var(--third-color);
+    width: 140px;
+    color: var(--white-color);
+} 
+
+ .main-button a{
+    text-decoration: none;
+    color:var(--white-color);
+} 
+
+.products-title{
+    text-align: center;
+}
+
+.section-index{
+    margin: auto;
+    width: 90%;
+} 
