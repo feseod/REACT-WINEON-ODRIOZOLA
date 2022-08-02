@@ -1,8 +1,9 @@
 
 import React from 'react';
 import './App.css';
-import ItemListContainer from './components/ItemListContainer';
-import NavBar from './components/NavBar';
+import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import NavBar from './components/navBar/NavBar';
 
 
 
@@ -10,9 +11,12 @@ function App() {
   return (
     <React.StrictMode>
       <NavBar />
-      <ItemListContainer>
+      <ItemDetailContainer>
+
+      </ItemDetailContainer>
+      {/* <ItemListContainer>
         <p> Acá irá el catálogo de productos </p>
-      </ItemListContainer>
+      </ItemListContainer> */}
     </React.StrictMode>
   );
 }

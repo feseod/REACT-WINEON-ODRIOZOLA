@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ItemCount from './ItemCount'
+import ItemCount from '../itemCount/ItemCount'
 import './Item.css';
 
 
@@ -18,7 +18,6 @@ const Item = ({producto}) => {
                         <img src={img} alt={name} />
                         <p>{name}</p>
                         <p>${price}</p>
-                        <p>{description}</p>
                         <div class="button-position">
                             <ItemCount initial={1} stock={stock} onAdd={onAdd}/>   
                         </div>

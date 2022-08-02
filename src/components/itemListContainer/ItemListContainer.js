@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import ItemList from "./ItemList"
-import { data } from "../mock/Promise"
+import ItemList from "../itemList/ItemList"
+import { data } from "../../mock/Promise"
 
 
 const ItemListContainer = () => {
