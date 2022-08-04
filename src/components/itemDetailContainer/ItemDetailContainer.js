@@ -1,14 +1,24 @@
 import { useState, useEffect } from "react";
-import {getItem} from "../../mock/Promise";
+/* import {getItem} from "../../mock/Promise"; */
 import ItemDetail from "../itemDetail/ItemDetail";
+import { useParams } from "react-router-dom"
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState([]);
+    const { id } = useParams();
+    
+    const getOneProduct = (id) => {
+        fetch("../JSON/Data.json")
+            .then((response) => response.json())
+            .then((data) =>
+                setItem(data.filter((item) => item.id === parseInt(id))[0]) /* parsear porque los params son strings, id es numerico */
+            );
+    };      
+
     useEffect(() => {
-        getItem
-            .then((res) => setItem(res))
-            .catch((err) => alert("Ha ocurrido un error", err));
-     }, []);
+        getOneProduct(id);
+    }, [id]);
+   
 
     return (
         <div>
