@@ -9,7 +9,7 @@ const NavBar = () => {
             <section className="container">
                 <div className="header-div-one">
                     <div>
-                        <a href="#" className="logo">WineOn</a>
+                        <Link to="/" className="logo">WineOn</Link>
                     </div>
                     <CartWidget>
                         1
@@ -18,7 +18,7 @@ const NavBar = () => {
                         <i className="fas fa-bars"></i> 
                     </button>
                    <div>
-                        <a href="#">
+                        <a>
                             <button className="login-button">INGRESAR</button>
                         </a>
                     </div>
@@ -31,17 +31,16 @@ const NavBar = () => {
                             <i className="fas fa-search"></i>
                             </button>
                         </div>
-
                     </form>
                 </div>
                 <nav className="menu"> 
-                    <a href="#">INICIO</a>
-                    <a href="#">PRODUCTOS</a>
+                    <Link to="/">INICIO</Link>
+                    <Link to="/">PRODUCTOS</Link>
                     <Link to="/category/tinto">VINO TINTO</Link>
-                    <Link to="/categoy/blanco">VINO BLANCO</Link>
-                    <a href="#">CONTACTO</a>
-                    <a href="#">NOSOTROS</a>
-                    <a href="#">INGRESAR</a>
+                    <Link to="/category/blanco">VINO BLANCO</Link>
+                    <a >CONTACTO</a>
+                    <a >NOSOTROS</a>
+                    <a >INGRESAR</a>
                 </nav>
             </section>
         </header>

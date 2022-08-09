@@ -27,23 +27,6 @@ const ItemListContainer = () => {
         .finally(()=> setLoading(false))
 }, [category]);
 
-
-
-/* const ItemListContainer = () => {
-  const [listaProductos, setListaProductos]= useState([])
-  const[mensaje, setMensaje] = useState(false)
-  const [loading, setLoading] = useState(true)
-
-  console.log('me monte')
-
-  useEffect(()=>{
-    console.log('soy el useEffect')
-    data
-    .then((res)=> setListaProductos(res))
-    .catch(()=> setMensaje('hubo un error, intente mas tarde'))
-    .finally(()=> setLoading(false))
-  }, [])
- */
   return (
     <div> 
         {mensaje && <p>{mensaje}</p>}

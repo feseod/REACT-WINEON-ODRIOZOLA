@@ -9,7 +9,7 @@ const ItemList = ({products}) => {
                                       category={product.category}
                                       description={product.description}
                                       price={product.price}
-                                      img={product.img}
+                                      img={product.image}
                                       stock={product.stock}
                                     />)}
     </div>
